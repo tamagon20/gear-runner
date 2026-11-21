@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GEAR RUNNER ギア・ランナー | 配布ページ</title>
+  <meta name="description" content="3Dアクションシューティング「GEAR RUNNER」の紹介・ダウンロードページ。">
+  <!-- SNS共有時の画像 (assets/images/screenshot-01.png を用意。1200x630推奨) -->
+  <meta property="og:title" content="GEAR RUNNER ギア・ランナー">
+  <meta property="og:description" content="3Dアクションシューティング「GEAR RUNNER」の紹介・ダウンロードページ。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/screenshot-01.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="brand" href="#top">GEAR RUNNER</a>
+    <nav>
+      <a href="#video">動画</a>
+      <a href="#screenshots">プレイ画像</a>
+      <a href="#about">概要</a>
+      <a href="#download" class="nav-cta">ダウンロード</a>
+    </nav>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <h1>GEAR RUNNER<small>ギア・ランナー</small></h1>
+      <p class="tagline">Claude Opus で作った3Dシューティング</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#download">ダウンロード</a>
+        <a class="btn btn-ghost" href="#video">紹介動画を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- 紹介動画 -->
+    <section id="video" class="section">
+      <h2>紹介動画</h2>
+
+      <!-- A) YouTube埋め込み: VT9a1qjvbgQ を差し替える (https://youtu.be/XXXXXXXXXXX の XXXXXXXXXXX 部分) -->
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/VT9a1qjvbgQ"
+          title="ゲーム紹介動画"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+
+      <!-- B) 動画ファイルを直接貼る場合は、上の video-wrap を消して下を有効化
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="assets/images/video-poster.png">
+          <source src="assets/video/trailer.mp4" type="video/mp4">
+          お使いのブラウザは動画再生に対応していません。
+        </video>
+      </div>
+      ※ GitHubは1ファイル100MBまで。動画は数十MB以内に圧縮するか、YouTubeを推奨。
+      -->
+    </section>
+
+    <!-- スクリーンショット -->
+    <section id="screenshots" class="section">
+      <h2>プレイ画像</h2>
+      <p class="muted">クリックで拡大できます。</p>
+      <div class="gallery">
+        <!-- 画像を増やすときは <figure> を1つコピーして src と alt を変更 -->
+        <figure><img src="assets/images/screenshot-01.png" alt="タイトル画面と街ステージ(港町カモメ)" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-02.jpg" alt="ボス戦:遺跡守護機 ドラグフライ" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-03.jpg" alt="アビサ海底都市を探索" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-04.jpg" alt="イグニス溶岩帯" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-05.jpg" alt="グラシア氷窟を進む" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-06.jpg" alt="機密研究所 ゼロ・ラボ" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-07.jpg" alt="空中ステージの足場を渡る" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-08.png" alt="ポーズ画面(感度・エイム・言語設定)" loading="lazy"></figure>
+        <figure><img src="assets/images/screenshot-09.png" alt="ステージセレクト画面" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- 概要 -->
+    <section id="about" class="section">
+      <h2>ゲーム概要</h2>
+      <p>バスターで敵を撃ち抜き、ステージを駆け抜ける3Dアクションシューティング。傭兵ロボットとして、各地で反乱を起こしている産業ロボットを制圧してください。港町、遺跡、海底都市、空中艦隊、溶岩帯、氷窟、発電所と、8つの個性的なステージを自由に選んで挑戦できます。ステージの最後にはボスが待ち受けています。</p>
+      <p>プログラムはすべて Claude Opus 5.5 と Claude Sonnet 5.5 で作りました。three.js を利用しています。BGM の一部には、AI 音楽生成サービス <strong>Suno AI</strong> で生成した音楽を使用しています。</p>
+
+      <h3>特徴</h3>
+      <ul class="features">
+        <li>全8ステージ。ステージセレクトから好きな順に挑戦</li>
+        <li>バスターの押し分け(通常弾/チャージ弾)、肩越しエイム、ビームサーベルで敵弾をはじく</li>
+        <li>レーダー表示、感度調整、6言語対応(日本語/English/한국어/Español/Português/简体中文)</li>
+      </ul>
+
+      <h3>操作方法</h3>
+      <table class="spec">
+        <tr><th>移動</th><td>W A S D / 矢印キー</td></tr>
+        <tr><th>ジャンプ</th><td>Space</td></tr>
+        <tr><th>射撃</th><td>マウス左クリック、または J / Z キー(ちょん押し=バスター、長押しして離す=チャージ)</td></tr>
+        <tr><th>エイム</th><td>マウス右クリック長押し、または K / X キー(肩越し視点)</td></tr>
+        <tr><th>視点移動</th><td>マウス移動、または Q / E キー(カメラ回転)</td></tr>
+        <tr><th>ビームサーベル</th><td>F(敵の弾もはじく)</td></tr>
+        <tr><th>ポーズ</th><td>P(ポーズ中に R でステージセレクトへ)</td></tr>
+        <tr><th>音声</th><td>M</td></tr>
+        <tr><th>マウス操作の開始</th><td>画面をクリックして有効化、Esc でカーソル表示</td></tr>
+      </table>
+    </section>
+
+    <!-- ダウンロード -->
+    <section id="download" class="section">
+      <h2>ダウンロード</h2>
+      <p class="muted">バージョン <strong>v1.0.2</strong> ／ 更新日 2026-11-21 ／ 無料</p>
+
+      <div class="downloads">
+        <!-- href の USERNAME/REPO を自分のリポジトリに。Releases にアップするファイル名は gear_runner_exe.zip -->
+        <a class="dl-card" href="https://github.com/USERNAME/REPO/releases/latest/download/gear_runner_exe.zip">
+          <span class="dl-os">Windows</span>
+          <span class="dl-file">gear_runner_exe.zip</span>
+          <span class="dl-size">約 20 MB</span>
+        </a>
+      </div>
+
+      <h3>動作環境</h3>
+      <table class="spec">
+        <tr><th>OS</th><td>Windows 11(動作確認済み)</td></tr>
+        <tr><th>CPU</th><td>AMD Ryzen 5 7530U(Radeon Graphics 内蔵)で動作確認済み</td></tr>
+        <tr><th>メモリ</th><td>16GB 推奨</td></tr>
+        <tr><th>ストレージ</th><td>約 30 MB(展開後)</td></tr>
+      </table>
+
+      <h3>インストール・起動方法</h3>
+      <ol>
+        <li>zip を任意の場所に展開します(<code>gear_runner.exe</code> と <code>ReadMe.txt</code> が入っています)。</li>
+        <li><code>gear_runner.exe</code> を実行します。</li>
+        <li>Windows で「PCが保護されました」と表示された場合は、「詳細情報」→「実行」を選んでください(個人開発でデジタル署名がないため、警告が表示されます)。</li>
+      </ol>
+    </section>
+
+    <!-- 他サイト -->
+    <section id="other-sites" class="section">
+      <h2>他のサイトでも公開中</h2>
+      <p>夢現、ふりーむ、itch.io、Plicy などにも公開しています。気になった人は探してみてください。ブラウザ版(タッチ操作対応)とダウンロード版(Windows)があります。</p>
+      <ul class="site-links">
+        <li><a href="https://freegame-mugen.jp/shooting/game_16218.html" target="_blank" rel="noopener">夢現(フリーゲーム夢現)</a></li>
+        <li><a href="https://www.freem.ne.jp/win/game/35403" target="_blank" rel="noopener">ふりーむ!</a></li>
+        <li><a href="https://plicy.net/GamePlay/241078" target="_blank" rel="noopener">Plicy</a></li>
+        <li><a href="https://tamagon20.itch.io/gear-runner" target="_blank" rel="noopener">itch.io</a></li>
+        <li><a href="https://craftnovagame.com/game/97" target="_blank" rel="noopener">CraftNova Game</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 tamagon20 ／ Powered by three.js</p>
+    <p class="small">このゲームはすべて Claude Opus で作られています。BGM の一部に suno.ai で生成した音楽を使用しています。</p>
+    <p><a href="https://github.com/USERNAME/REPO">GitHub</a></p>
+  </footer>
+
+  <!-- 画像拡大表示 -->
+  <div id="lightbox" class="lightbox" hidden>
+    <img alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
